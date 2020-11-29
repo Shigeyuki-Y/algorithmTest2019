@@ -19,7 +19,7 @@ public class algorithmTestB{
         scan.close();
 
         //前日との売上の比較
-        for (int i = 0; i <num1; i++){
+        for (int i = 0; i <num1 - 1; i++){
             
             if (N[i] == N[i+1]){
                 System.out.println("stay");
