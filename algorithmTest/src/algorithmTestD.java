@@ -25,17 +25,19 @@ public class algorithmTestD {
         int a = 0;
         int b = 0;
 
-        for (int j = 0; j < num1; j++){
+        for (int j = 0; j < num1 - 1; j++){
             if (N2[j] == N2[j+1]){
                 a = N2[j];
-            }else if (N2[j+1] - N2[j] > 1){
+            }else if ((N2[j+1] - N2[j]) > 1){
                 b = (N2[j+1] + N2[j])/2;
             }
         }
-        if (a == b){
+
+        if (b == 0){
             System.out.println("Correct");
         }else{
-            System.out.println(a + " " + b );
+            
+            System.out.println(a + "  " + b);
         }
 
     }
